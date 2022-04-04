@@ -4,21 +4,30 @@ Your challenge is to create an app that enables the user to input any size (e.g.
 
 By Kattana Luz
 
-<br>
-
-### `Tasks: You must:`
+### `Tasks:`
 
 <br>
 
-- use React.js
-- have, at least, unit test for one component
-- fetch the data from the https://baconmockup.com/
-- not overfocus on style, but the app should be responsive
-- create a repo on GitHub
-- create a readme file with a project summary, and instructions about how to run the project locally and how to run tests
-- learn a lot and have fun 🤓
+- Use React.js
+- Have, at least, unit test for one component
+- Fetch the data from the https://baconmockup.com/
+- Not overfocus on style, but the app should be responsive
+- Create a repo on GitHub
+- Create a readme file with a project summary, and instructions about how to run the project locally and how to run tests
+- Learn a lot and have fun 🤓
 
 <br>
 
-### `📅 deadline: Thursday 07/04`
-# bacon_challenge
+### `How to run the app`
+
+```sh
+npm start
+```
+
+> Note: `If something doesn't work` Please run npm i (to install everything)
+
+### `How to run test`
+
+```
+npm run test
+```
