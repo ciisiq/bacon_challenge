@@ -2,7 +2,7 @@
 
 Your challenge is to create an app that enables the user to input any size (e.g. 200 x 200, 900 x 300) to generate a bacon image that matches the requested size.
 
-By Kattana Luz
+By [Kattana Luz](https://github.com/kattanaluz)
 
 ### `Tasks:`
 
