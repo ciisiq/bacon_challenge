@@ -1,17 +1,28 @@
 import React from "react";
+import "./input.css";
 
-function Input() {
+function Input({ onChangeWidth, onChangeHight }) {
   return (
-    <form>
-      <label>
-        🥓Width size:
-        <input type="text" name="width" />
-      </label>
-      <label>
-        🥓Height size:
-        <input type="text" name="height" />
-      </label>
-    </form>
+    <div className="search">
+      <div>
+        <h4>🥓Width size:</h4>
+        <input
+          type="text"
+          name="width"
+          placeholder="Width here"
+          onChange={onChangeWidth}
+        />
+      </div>
+      <div>
+        <h4>🥓Height size:</h4>
+        <input
+          type="text"
+          name="height"
+          placeholder="Height here"
+          onChange={onChangeHight}
+        />
+      </div>
+    </div>
   );
 }
 

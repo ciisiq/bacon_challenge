@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Image({ bacon }) {
+export default function Image({ props }) {
   return (
     <div>
-      <p>Your new bacon is:</p>
-      <img alt="bacon">{bacon}</img>
+      <p>Your new bacon is: </p>
+      <img alt="bacon" src={props}></img>
     </div>
   );
 }

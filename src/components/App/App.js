@@ -4,12 +4,22 @@ import Image from "../Image/Image";
 import Input from "../Input/Input";
 import "./App.css";
 
-const url = "https://baconmockup.com/300/200/";
+// const url = `https://baconmockup.com/300/200/random/bacon`;
 
 function App() {
-  // const [width, setwidth] = useState();
-  // const [height, setHeight] = useState();
   const [bacon, setBacon] = useState();
+  const [width, setWidth] = useState("");
+  const [height, setHeight] = useState("");
+
+  const url = `https://baconmockup.com/${width}/${height}/random/bacon`;
+
+  const handleWidth = (e) => {
+    setWidth(e.target.value);
+  };
+
+  const handleHeight = (e) => {
+    setHeight(e.target.value);
+  };
 
   async function getBacon() {
     const response = await fetch(url);
@@ -19,13 +29,7 @@ function App() {
     reader.onloadend = () => {
       const base64data = reader.result;
       setBacon(base64data);
-      console.log(base64data);
     };
-
-    // const data = await response.json();
-    // JSON.parse(newBacon);
-    // console.log(data);
-    // newBacon = data;
   }
 
   useEffect(() => {
@@ -36,9 +40,9 @@ function App() {
     <div className="App">
       <h1>The best bacon's pictures 🥓🥓</h1>
       <h3> Please search from any size eg. 200 x 200 </h3>
-      <Input />
+      <Input onChangeWidth={handleWidth} onChangeHight={handleHeight} />
       <Button click={() => getBacon()} />
-      <Image src={bacon} />
+      <Image props={bacon} />
     </div>
   );
 }

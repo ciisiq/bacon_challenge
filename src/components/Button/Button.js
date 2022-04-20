@@ -3,7 +3,9 @@ import React from "react";
 function Button({ click }) {
   return (
     <>
-      <button onClick={click}>Search Bacon</button>
+      <button className="btn" onClick={click}>
+        Get a Bacon
+      </button>
     </>
   );
 }

@@ -1,0 +1,17 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  text-align: center;
+  width: 300px;
+}
+
+label {
+}
+
+.btn {
+  width: 100px;
+}
